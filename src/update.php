@@ -99,7 +99,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             $funkosService->update($funko);
             echo "<script type='text/javascript'>
-                alert('Funko actualizado correctamente');
                 window.location.href = 'index.php';
                 </script>";
         } catch (Exception $e) {

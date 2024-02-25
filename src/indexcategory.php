@@ -74,7 +74,7 @@ if (!$session->isAdmin()) {
         <?php endforeach; ?>
         </tbody>
     </table>
-        <a class="btn btn-primary btn-block" href="createCategory.php">Nuevo Funko</a>
+        <a class="btn btn-primary btn-block" href="createCategory.php">Nueva Categoría</a>
 
     <p class="mt-4 text-center text-muted">
         <?php

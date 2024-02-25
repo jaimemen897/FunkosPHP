@@ -51,16 +51,15 @@ if ($id === false) {
             <dd class="col-sm-10"><?php echo htmlspecialchars($funko->name); ?></dd>
 
             <dt class="col-sm-2">Precio</dt>
-            <dd class="col-sm-10"><?php echo htmlspecialchars($funko->price); ?></dd>
+            <dd class="col-sm-10"><?php echo htmlspecialchars($funko->price); ?>€</dd>
 
             <dt class="col-sm-2">Stock</dt>
-            <dd class="col-sm-10"><?php echo htmlspecialchars($funko->stock); ?></dd>
+            <dd class="col-sm-10"><?php echo htmlspecialchars($funko->stock); ?> Uds</dd>
 
             <dt class="col-sm-2">Categoría</dt>
             <dd class="col-sm-10"><?php echo htmlspecialchars($funko->category_name); ?></dd>
         </div>
         <div class="col-sm-6">
-            <dt class="col-sm-2">Imagen</dt>
             <dd class="col-sm-10">
                 <img alt="Funko Image" class="img-fluid" src="<?php echo htmlspecialchars($funko->image); ?>"
                      width="280" height="280">

@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php require_once 'linkBootstrap.php'; ?>
 </head>
 <body class="d-flex align-items-center justify-content-center vh-100">
-<div class="container" style="width: 50%;">
+<div class="container w-50">
     <h1>Login</h1>
     <form action="login.php" method="post">
         <div class="form-group">

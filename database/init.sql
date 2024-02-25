@@ -83,3 +83,7 @@ VALUES (1, 'admin', '$2a$10$vPaqZvZkz6jhb7U7k/V/v.5vprfNdOnh4sxi/qpPRkYTzPmFlI9p
         'john.doe@example.com', '2024-01-30 10:00:00', NULL, false),
        (3, 'test', '$2a$10$Pd1yyq2NowcsDf4Cpf/ZXObYFkcycswqHAqBndE1wWJvYwRxlb.Pu', 'Jane', 'Smith',
         'jane.smith@example.com', '2024-01-30 10:00:00', NULL, false);
+
+/*admin - Admin1*/
+/*user - User1*/
+/*test - Test1*/

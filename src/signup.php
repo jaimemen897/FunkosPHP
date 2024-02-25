@@ -59,14 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header('Location: index.php');
         } catch (Exception $e) {
             $error = $e->getMessage();
-            echo "<script type='text/javascript'>
-            alert('$error');
-          </script>";
         }
-    } else {
-        echo "<script type='text/javascript'>
-            alert('Rellena todos los campos');
-          </script>";
     }
 }
 ?>
@@ -79,11 +72,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include 'linkBootstrap.php' ?>
 </head>
 <body class="d-flex align-items-center justify-content-center vh-100">
-<div class="container">
+<div class="container w-50">
     <h1>Registrarse</h1>
 
     <form class="mt-3" action="signup.php" method="post" autocomplete="on">
-        <!--username, password, name, surnames, email-->
         <div class="form-group">
             <label for="username">Username</label>
             <input class="form-control" id="username" name="username" type="text" required>

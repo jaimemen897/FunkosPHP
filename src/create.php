@@ -80,14 +80,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             $funkosService->save($funko);
             echo "<script type='text/javascript'>
-                alert('Funko creado correctamente');
                 window.location.href = 'index.php';
                 </script>";
         } catch (Exception $e) {
             $error = $e->getMessage();
-            echo "<script type='text/javascript'>
-            alert('$error');
-          </script>";
         }
     }
 }
@@ -133,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="form-group mb-3">
             <label for="category">Categoría</label>
-            <select class="form-control" id="category" name="category" required>
+            <select class="form-select" id="category" name="category" required>
                 <option value="">Seleccione una categoría</option>
                 <?php foreach ($categories as $cat): ?>
                     <option value="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></option>

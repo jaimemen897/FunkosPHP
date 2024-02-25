@@ -45,7 +45,7 @@ $session = SessionService::getInstance();
         <thead class="thead-dark">
         <tr>
             <th>ID</th>
-            <th>Name</th>
+            <th>Nombre</th>
             <th>Precio</th>
             <th>Stock</th>
             <th>Imagen</th>
@@ -62,7 +62,7 @@ $session = SessionService::getInstance();
             <tr>
                 <td><?php echo htmlspecialchars($funko->id); ?></td>
                 <td><?php echo htmlspecialchars($funko->name); ?></td>
-                <td><?php echo htmlspecialchars($funko->price); ?></td>
+                <td><?php echo htmlspecialchars($funko->price); ?>€</td>
                 <td><?php echo htmlspecialchars($funko->stock); ?></td>
                 <td>
                     <img alt="Imagen del funko" height="50"

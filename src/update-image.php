@@ -34,7 +34,6 @@ if ($id === false) {
     $funko = $funkosService->findById($id);
     if ($funko === null) {
         echo "<script type='text/javascript'>
-                alert('No existe el funko');
                 window.location.href = 'index.php';
                 </script>";
     }
@@ -66,7 +65,7 @@ if ($id === false) {
             <dd class="col-sm-10"><?php echo htmlspecialchars($funko->stock); ?></dd>
             <form action="update_image_file.php" enctype="multipart/form-data" method="post">
                 <div class="form-group mb-3">
-                    <label for="image">Imagen:</label>
+                    <label for="image"><strong>Imagen:</strong></label> <br>
                     <input accept="image/*" class="form-control-file" id="image" name="image" required type="file">
                     <small class="text-danger"></small>
                     <input name="id" value="<?php echo $id; ?>" type="hidden">
@@ -77,8 +76,6 @@ if ($id === false) {
             </form>
         </div>
         <div class="col-sm-6">
-            <dt class="col-sm-2">Imagen:</dt>
-
             <dd class="col-sm-10">
                 <img alt="Funko Image" class="img-fluid" src="<?php echo htmlspecialchars($funko->image); ?>" width="300"
                      height="300">
